@@ -1,0 +1,3 @@
+import cx_Freeze
+executables=[cx_Freeze.Executable("PyProject.py")]
+cx_Freeze.setup(name="Mamba",options={"build_exe":{"packages":["pygame"],"include_files":["food.png","mamba.png","gm.jpg","gm1.jpg","oops.jpg","head.png"]}},description="Mamba Game",executables=executables)
